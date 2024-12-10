@@ -2,12 +2,8 @@
   /* text-align: center; */
   margin: 10px;
 }
-#word{
-  font-weight: 700;
-}
-#sent{
-  display: none;
-}
+
+
 textarea{
   width: 400px;
   height: 100px;

@@ -22,12 +22,12 @@ function App() {
         {
           if(customDictionary.hasOwnProperty(a))
             {
-              document.getElementById('word').innerText = customDictionary[a];
-              document.getElementById('sent').style.display = "block";
+              document.getElementById('sent').innerText = `Did you mean: ${customDictionary[a]}?`;
+              
               break;
             }
             else{
-              document.getElementById('sent').style.display = "none";
+              document.getElementById('sent').innerText = ``;
             }
           }
           
@@ -38,7 +38,7 @@ function App() {
     <div className="App">
       <h1>Spell Check and Auto-Correction</h1>
       <textarea placeholder='Enter text...' onChange = {handleChange}></textarea>
-      <p id = 'sent'>Did you mean: <span id="word"></span>?</p>
+      <p id = 'sent'></p>
     </div>
   );
 }
