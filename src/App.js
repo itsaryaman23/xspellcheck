@@ -12,7 +12,7 @@ function App() {
   };
 
   const handleChange = (e) => {
-    let word = e.target.value;
+    let word = e.target.value.toLowerCase();
     let arr = word.split(' ');
     if(arr.length)
     {
